@@ -57,6 +57,11 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Table" />
+    <Folder Include="StoredProcedure" />
+    <Folder Include="StoredProcedure\Film" />
+    <Folder Include="StoredProcedure\Serie" />
+    <Folder Include="StoredProcedure\Personne" />
+    <Folder Include="Script" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Personne.sql" />
@@ -70,11 +75,18 @@
     <Build Include="Table\Serie_Personne.sql" />
     <Build Include="Table\Saison.sql" />
     <Build Include="Table\Episode.sql" />
+    <PostDeploy Include="Script\Script.PostDeployment1.sql" />
+    <Build Include="StoredProcedure\Film\P_Film_Insert.sql" />
+    <Build Include="StoredProcedure\Personne\P_Personne_Insert.sql" />
+    <Build Include="StoredProcedure\Serie\P_Serie_Insert.sql" />
+    <Build Include="StoredProcedure\Film\P_Film_Update.sql" />
+    <Build Include="StoredProcedure\Personne\P_Personne_Update.sql" />
+    <Build Include="StoredProcedure\Serie\P_Serie_Update.sql" />
+    <Build Include="StoredProcedure\Film\P_Film_Delete.sql" />
+    <Build Include="StoredProcedure\Personne\P_Personne_Delete.sql" />
+    <Build Include="StoredProcedure\Serie\P_Serie_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB_FilmApli.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
