@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApli", "FilmApli\FilmApli.csproj", "{8D702601-3AEE-4EC7-A72B-5825BD6381F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmApli", "FilmApli\FilmApli.csproj", "{8D702601-3AEE-4EC7-A72B-5825BD6381F8}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB_FilmApli", "DB_FilmApli\DB_FilmApli.sqlproj", "{7C76402A-E00D-48C2-8F0C-7E3914EAB90B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApli_DAL", "FilmApli_DAL\FilmApli_DAL.csproj", "{5962ABB8-B2D6-4B62-BC9E-30943CBF1629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApli_Repo", "FilmApli_Repo\FilmApli_Repo.csproj", "{1DF10ADC-20DC-47DC-BEDC-69B975B34392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApli_BLL", "FilmApli_BLL\FilmApli_BLL.csproj", "{AC60B4AF-B037-4475-AD5C-288D6DBF5843}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,18 @@ Global
 		{7C76402A-E00D-48C2-8F0C-7E3914EAB90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C76402A-E00D-48C2-8F0C-7E3914EAB90B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C76402A-E00D-48C2-8F0C-7E3914EAB90B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5962ABB8-B2D6-4B62-BC9E-30943CBF1629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5962ABB8-B2D6-4B62-BC9E-30943CBF1629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5962ABB8-B2D6-4B62-BC9E-30943CBF1629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5962ABB8-B2D6-4B62-BC9E-30943CBF1629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF10ADC-20DC-47DC-BEDC-69B975B34392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF10ADC-20DC-47DC-BEDC-69B975B34392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF10ADC-20DC-47DC-BEDC-69B975B34392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF10ADC-20DC-47DC-BEDC-69B975B34392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC60B4AF-B037-4475-AD5C-288D6DBF5843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC60B4AF-B037-4475-AD5C-288D6DBF5843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC60B4AF-B037-4475-AD5C-288D6DBF5843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC60B4AF-B037-4475-AD5C-288D6DBF5843}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
