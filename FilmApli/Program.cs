@@ -11,6 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IFilmService, Film_Service>();
+builder.Services.AddScoped<IPersonneService, Personne_Service>();
+builder.Services.AddScoped<ISerieService, Serie_Service>();
 
 var app = builder.Build();
 

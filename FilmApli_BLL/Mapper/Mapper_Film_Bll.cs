@@ -1,8 +1,6 @@
 ﻿using FilmApli_BLL.Models;
 using FilmApli_Repo.Entities;
 
-
-
 namespace FilmApli_BLL.Mapper
 {
     public static class Mapper_Film_Bll

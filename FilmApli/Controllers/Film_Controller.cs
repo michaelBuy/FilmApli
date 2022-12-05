@@ -18,22 +18,22 @@ namespace FilmApli.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok(_filmService?.Get(id));
+            return Ok(_filmService.Get(id));
         }
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(_filmService?.GetAll());
+            return Ok(_filmService.GetAll());
         }
         [HttpPost]
         public IActionResult Insert(Film_C film)
         {
-            return Ok(_filmService?.Insert(film.ToBLL()));
+            return Ok(_filmService.Insert(film.ToBLL()));
         }
         [HttpPut]
         public IActionResult Update(Film_C film)
         {
-            return Ok(_filmService?.Update(film.ToBLL()));
+            return Ok(_filmService.Update(film.ToBLL()));
         }
         [HttpDelete]
         public IActionResult Delete(int id)

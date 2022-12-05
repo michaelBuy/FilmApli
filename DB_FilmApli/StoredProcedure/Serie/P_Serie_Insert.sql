@@ -1,5 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[P_Serie_Insert]
-	@Id_Serie INT,
+﻿CREATE PROCEDURE [dbo].[P_Serie_Insert]	
 	@Nom_Serie NVARCHAR(125),
 	@Duree_Serie NVARCHAR(25),
 	@DateSortie_Serie DATETIME2, 
