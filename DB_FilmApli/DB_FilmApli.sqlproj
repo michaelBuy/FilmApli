@@ -62,6 +62,7 @@
     <Folder Include="StoredProcedure\Serie" />
     <Folder Include="StoredProcedure\Personne" />
     <Folder Include="Script" />
+    <Folder Include="StoredProcedure\Episode" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Personne.sql" />
@@ -85,6 +86,9 @@
     <Build Include="StoredProcedure\Film\P_Film_Delete.sql" />
     <Build Include="StoredProcedure\Personne\P_Personne_Delete.sql" />
     <Build Include="StoredProcedure\Serie\P_Serie_Delete.sql" />
+    <Build Include="StoredProcedure\Episode\P_Episode_Delete.sql" />
+    <Build Include="StoredProcedure\Episode\P_Episode_Update.sql" />
+    <Build Include="StoredProcedure\Episode\P_Episode_Insert.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB_FilmApli.publish.xml" />

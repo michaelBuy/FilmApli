@@ -28,6 +28,7 @@ namespace FilmApli_BLL.Services
         public IEnumerable<Film_BLL> GetAll()
         {
             return _filmRepo!.GetAll().Select(x => x.ToRepo());
+            //return _filmRepo!.GetAll().Select(x => x.Id_saison = reposaison.get(x));
         }
 
         public int Insert(Film_BLL entity)
