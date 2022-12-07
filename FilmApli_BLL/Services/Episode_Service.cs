@@ -1,38 +1,43 @@
 ﻿using FilmApli_BLL.Interfaces;
+using FilmApli_BLL.Mapper;
 using FilmApli_BLL.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FilmApli_Repo.Repositories;
+
 
 namespace FilmApli_BLL.Services
 {
     public class Episode_Service : IEpisodeService
     {
+        private EpisodeRepo? _episodeRepo;
+
+        public Episode_Service()
+        {
+            _episodeRepo = new EpisodeRepo();
+        }
+
         public bool Delete(Episode_BLL id)
         {
-            throw new NotImplementedException();
+            return _episodeRepo!.Delete(id.ToBLL());
         }
 
         public Episode_BLL Get(int id)
         {
-            throw new NotImplementedException();
+            return _episodeRepo!.Get(id).ToRepo();
         }
 
         public IEnumerable<Episode_BLL> GetAll()
         {
-            throw new NotImplementedException();
+            return _episodeRepo!.GetAll().Select(x => x.ToRepo()); // Ajouter le lien avec Saison
         }
 
         public int Insert(Episode_BLL entity)
         {
-            throw new NotImplementedException();
+            return _episodeRepo!.Insert(entity.ToBLL());
         }
 
         public bool Update(Episode_BLL data)
         {
-            throw new NotImplementedException();
+            return _episodeRepo!.Update(data.ToBLL());
         }
     }
 }

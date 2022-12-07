@@ -1,18 +1,13 @@
-﻿using FilmApli_BLL.Models;
-using FilmApli_Repo.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FilmApli.Models;
+using FilmApli_BLL.Models;
 
-namespace FilmApli_BLL.Mapper
+namespace FilmApli.Mapper
 {
-    public static class Mapper_Episode_BLL
+    public static class Mapper_Episode_Client
     {
-        public static Episode_BLL ToRepo(this Episode episode)
+        public static Episode_C ToClient(this Episode_BLL episode)
         {
-            return new Episode_BLL
+            return new Episode_C()
             {
                 Id = episode.Id,
                 Numero_Episode = episode.Numero_Episode,
@@ -22,10 +17,9 @@ namespace FilmApli_BLL.Mapper
                 Id_Saison = episode.Id_Saison
             };
         }
-
-        public static Episode ToBLL(this Episode_BLL episode)
+        public static Episode_BLL ToBLL(this Episode_C episode)
         {
-            return new Episode
+            return new Episode_BLL()
             {
                 Id = episode.Id,
                 Numero_Episode = episode.Numero_Episode,

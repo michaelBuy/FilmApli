@@ -53,7 +53,7 @@ VALUES
 	('Producteur'),
 	('Scénariste')
 
-INSERT INTO Film_Genre(Id_Film, Id_Genre, LIFO_Film_Genre)
+INSERT INTO Film_Genre(Id_Film, Id_Genre, PEGI_Film_Genre)
 VALUES
 	(1, 1, 0),
 	(1, 5, 0),
@@ -72,7 +72,7 @@ VALUES
 	(1, 7, 1),
 	(4, 6, 1)
 
-INSERT INTO Serie_Genre(Id_Serie, Id_Genre, LIFO_Serie_Genre)
+INSERT INTO Serie_Genre(Id_Serie, Id_Genre, PEGI_Serie_Genre)
 VALUES	
 	(1, 4, 0),
 	(2, 4, 0),

@@ -13,7 +13,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IFilmService, Film_Service>();
 builder.Services.AddScoped<IPersonneService, Personne_Service>();
 builder.Services.AddScoped<ISerieService, Serie_Service>();
+builder.Services.AddScoped<IEpisodeService, Episode_Service>();
 
+int[] c = new int[] { };
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
