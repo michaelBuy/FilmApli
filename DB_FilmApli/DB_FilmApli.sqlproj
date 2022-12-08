@@ -63,11 +63,9 @@
     <Folder Include="StoredProcedure\Personne" />
     <Folder Include="Script" />
     <Folder Include="StoredProcedure\Episode" />
-    <Folder Include="StoredProcedure\Film_Genre" />
     <Folder Include="StoredProcedure\Fonction" />
     <Folder Include="StoredProcedure\Genre" />
     <Folder Include="StoredProcedure\Saison" />
-    <Folder Include="StoredProcedure\Serie_Genre" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Personne.sql" />
@@ -94,9 +92,6 @@
     <Build Include="StoredProcedure\Episode\P_Episode_Delete.sql" />
     <Build Include="StoredProcedure\Episode\P_Episode_Update.sql" />
     <Build Include="StoredProcedure\Episode\P_Episode_Insert.sql" />
-    <Build Include="StoredProcedure\Film_Genre\P_FilmGenre_Insert.sql" />
-    <Build Include="StoredProcedure\Film_Genre\P_FilmGenre_Delete.sql" />
-    <Build Include="StoredProcedure\Film_Genre\P_FilmGenre_Update.sql" />
     <Build Include="StoredProcedure\Fonction\P_Fonction_Insert.sql" />
     <Build Include="StoredProcedure\Fonction\P_Fonction_Delete.sql" />
     <Build Include="StoredProcedure\Fonction\P_Fonction_Update.sql" />
@@ -106,9 +101,6 @@
     <Build Include="StoredProcedure\Saison\P_Saison_Delete.sql" />
     <Build Include="StoredProcedure\Saison\P_Saison_Update.sql" />
     <Build Include="StoredProcedure\Saison\P_Saison_Insert.sql" />
-    <Build Include="StoredProcedure\Serie_Genre\P_SerieGenre_Insert.sql" />
-    <Build Include="StoredProcedure\Serie_Genre\P_SerieGenre_Delete.sql" />
-    <Build Include="StoredProcedure\Serie_Genre\P_SerieGenre_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB_FilmApli.publish.xml" />

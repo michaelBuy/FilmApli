@@ -53,17 +53,17 @@ VALUES
 	('Producteur'),
 	('Scénariste')
 
-INSERT INTO Film_Genre(Id_Film, Id_Genre, PEGI_Film_Genre)
+INSERT INTO Film_Genre(Id_Film, Id_Genre)
 VALUES
-	(1, 1, 0),
-	(1, 5, 0),
-	(1, 4, 0),
-	(2, 6, 0),
-	(2, 7, 0),
-	(3, 9, 12),
-	(3, 9, 12),
-	(4, 8, 12),
-	(4, 4, 12)
+	(1, 1),
+	(1, 5),
+	(1, 4),
+	(2, 6),
+	(2, 7),
+	(3, 9),
+	(3, 9),
+	(4, 8),
+	(4, 4)
 
 INSERT INTO Film_Personne(Id_Film, Id_Personne, Id_Fonction)
 VALUES
@@ -72,14 +72,14 @@ VALUES
 	(1, 7, 1),
 	(4, 6, 1)
 
-INSERT INTO Serie_Genre(Id_Serie, Id_Genre, PEGI_Serie_Genre)
+INSERT INTO Serie_Genre(Id_Serie, Id_Genre)
 VALUES	
-	(1, 4, 0),
-	(2, 4, 0),
-	(2, 9, 0),
-	(3, 4, 0),
-	(3, 6, 0),
-	(3, 8, 0)
+	(1, 4 ),
+	(2, 4 ),
+	(2, 9),
+	(3, 4),
+	(3, 6),
+	(3, 8)
 
 
 INSERT INTO Serie_Personne(Id_Serie, Id_Personne, Id_Fonction)

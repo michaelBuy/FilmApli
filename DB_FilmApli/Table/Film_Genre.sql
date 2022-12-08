@@ -2,8 +2,7 @@
 (
 	[Id_Film_Genre] INT NOT NULL PRIMARY KEY IDENTITY,
 	[Id_Film] INT NOT NULL,
-	[Id_Genre] INT NOT NULL,
-	[PEGI_Film_Genre] INT,
+	[Id_Genre] INT NOT NULL,	
 	CONSTRAINT FK_Genre_FilmGenre FOREIGN KEY (Id_Genre)
 		REFERENCES Genre(Id_Genre),
 	CONSTRAINT FK_Film_FilmGenre FOREIGN KEY (Id_Film)
