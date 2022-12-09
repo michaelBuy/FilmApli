@@ -1,10 +1,6 @@
 ﻿using FilmApli_BLL.Models;
 using FilmApli_Repo.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace FilmApli_BLL.Mapper
 {
