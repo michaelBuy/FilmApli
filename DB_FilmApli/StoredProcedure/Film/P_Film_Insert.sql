@@ -3,9 +3,10 @@
 	@DateSortie DATETIME2,
 	@Duree NVARCHAR(25),
 	@Origine NVARCHAR(50),
-	@Synopsis NVARCHAR(500)
+	@Synopsis NVARCHAR(500),
+	@Img_Url NVARCHAR(100)
 AS
 BEGIN
-	INSERT INTO Film(Titre, DateSortie, Duree, Origine, Synopsis_Film)
-	VALUES(@Titre, @DateSortie, @Duree, @Origine, @Synopsis)
+	INSERT INTO Film(Titre, DateSortie, Duree, Origine, Synopsis_Film, Img_Url)
+	VALUES(@Titre, @DateSortie, @Duree, @Origine, @Synopsis, @Img_Url)
 END

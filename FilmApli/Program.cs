@@ -2,7 +2,19 @@
 using FilmApli_BLL.Interfaces;
 using FilmApli_BLL.Services;
 
+var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            //policy.WithOrigins("http://localhost:4200", "https://localhost:4200").WithMethods("PUT", "DELETE", "GET","POST");
+            policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+        });
+});
 
 // Add services to the container.
 
@@ -29,6 +41,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 

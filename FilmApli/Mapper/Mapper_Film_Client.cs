@@ -14,7 +14,8 @@ namespace FilmApli.Mapper
                 DateSortie = film_bll.DateSortie,
                 Duree = film_bll.Duree,
                 Origine = film_bll.Origine,
-                Synopsis_Film = film_bll.Synopsis_Film
+                Synopsis_Film = film_bll.Synopsis_Film,
+                Img_Url = film_bll.Img_Url
             };
         }
 
@@ -27,7 +28,8 @@ namespace FilmApli.Mapper
                 DateSortie = film_controller.DateSortie,
                 Duree = film_controller.Duree,
                 Origine = film_controller.Origine,
-                Synopsis_Film = film_controller.Synopsis_Film
+                Synopsis_Film = film_controller.Synopsis_Film,
+                Img_Url= film_controller.Img_Url
             };
         }
     }
