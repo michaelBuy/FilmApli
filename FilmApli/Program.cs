@@ -6,8 +6,6 @@ var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
 
 var builder = WebApplication.CreateBuilder(args);
 
-var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
