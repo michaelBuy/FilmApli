@@ -5,5 +5,6 @@
 	[DateSortie] DATETIME2,
 	[Duree] NVARCHAR(25),
 	[Origine] NVARCHAR(50),
-	[Synopsis_Film] NVARCHAR(500)
+	[Synopsis_Film] NVARCHAR(500),
+	[Img_Url] NVARCHAR(100)
 )

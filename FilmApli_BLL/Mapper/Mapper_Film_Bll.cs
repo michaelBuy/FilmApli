@@ -14,7 +14,8 @@ namespace FilmApli_BLL.Mapper
                 DateSortie = film_repo.DateSortie,
                 Duree = film_repo.Duree,
                 Origine = film_repo.Origine,
-                Synopsis_Film = film_repo.Synopsis_Film
+                Synopsis_Film = film_repo.Synopsis_Film,
+                Img_Url = film_repo.Img_Url
             };
         }
 
@@ -27,7 +28,8 @@ namespace FilmApli_BLL.Mapper
                 DateSortie = film_bll.DateSortie,
                 Duree = film_bll.Duree,
                 Origine = film_bll.Origine,
-                Synopsis_Film = film_bll.Synopsis_Film
+                Synopsis_Film = film_bll.Synopsis_Film,                
+                Img_Url = film_bll.Img_Url
             };
         }
     }

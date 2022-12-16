@@ -2,6 +2,8 @@
 using FilmApli_BLL.Interfaces;
 using FilmApli_BLL.Services;
 
+var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
+
 var builder = WebApplication.CreateBuilder(args);
 
 var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
