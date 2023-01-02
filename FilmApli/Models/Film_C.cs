@@ -10,6 +10,6 @@ namespace FilmApli.Models
         public string? Duree { get; set; }
         public string? Origine { get; set; }
         public string? Synopsis_Film { get; set; }
-        public string Img_Url { get; set; }
+        //public string Img_Url { get; set; }
     }
 }

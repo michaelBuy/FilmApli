@@ -9,8 +9,8 @@ namespace FilmApli_Repo.Repositories.BasicRepository
     public abstract class BasicRepo<Tkey, TEntity> : IRepository<Tkey, TEntity>
         where TEntity : IEntity<Tkey>
     {
-        //private string connexion = @"Data Source=DESKTOP-Q65J50R\SQLEXPRESS;Initial Catalog=DB_FilmApli;Integrated Security=True";
-        private string connexion = @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=DB_FilmApli;Integrated Security=True";
+        private string connexion = @"Data Source=DESKTOP-Q65J50R\SQLEXPRESS;Initial Catalog=DB_FilmApli;Integrated Security=True";
+        //private string connexion = @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=DB_FilmApli;Integrated Security=True";
         
         protected BasicRepo(string entityName, string idName)
         {

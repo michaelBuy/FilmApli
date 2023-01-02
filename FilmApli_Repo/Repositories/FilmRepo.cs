@@ -17,11 +17,11 @@ namespace FilmApli_Repo.Repositories
             {
                 Id = (int)dtr["Id_Film"],
                 Titre = dtr["Titre"].ToString(),
-                DateSortie = (DateTime)dtr["DateSortie"],
+                DateSortie = dtr["DateSortie"] == DBNull.Value ? null : (DateTime)dtr["DateSortie"],
                 Duree = dtr["Duree"].ToString(),
                 Origine = dtr["Origine"].ToString(),
                 Synopsis_Film = dtr["Synopsis_Film"].ToString(),
-                Img_Url = dtr["Img_Url"].ToString()
+                //Img_Url = dtr["Img_Url"].ToString()
             };          
         }
 
@@ -40,7 +40,7 @@ namespace FilmApli_Repo.Repositories
             cmd.AddParameter("@Duree", entity.Duree!);
             cmd.AddParameter("@Origine", entity.Origine!);
             cmd.AddParameter("@Synopsis", entity.Synopsis_Film!);
-            cmd.AddParameter("@Img_Url", entity.Img_Url);
+            //cmd.AddParameter("@Img_Url", entity.Img_Url);
             return ConnectionString!.ExecuteNonQuery(cmd);
         }
 
@@ -53,7 +53,7 @@ namespace FilmApli_Repo.Repositories
             cmd.AddParameter("@Duree", data.Duree!);
             cmd.AddParameter("@Origine", data.Origine!);
             cmd.AddParameter("@Synopsis", data.Synopsis_Film!);
-            cmd.AddParameter("@Img_Url", data.Img_Url);
+            /*cmd.AddParameter("@Img_Url", data.Img_Url);*/
             return ConnectionString!.ExecuteNonQuery(cmd) == 1;
         }
     }

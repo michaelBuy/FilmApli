@@ -15,7 +15,7 @@ namespace FilmApli_BLL.Mapper
                 Duree = film_repo.Duree,
                 Origine = film_repo.Origine,
                 Synopsis_Film = film_repo.Synopsis_Film,
-                Img_Url = film_repo.Img_Url
+                //Img_Url = film_repo.Img_Url
             };
         }
 
@@ -29,7 +29,7 @@ namespace FilmApli_BLL.Mapper
                 Duree = film_bll.Duree,
                 Origine = film_bll.Origine,
                 Synopsis_Film = film_bll.Synopsis_Film,                
-                Img_Url = film_bll.Img_Url
+                //Img_Url = film_bll.Img_Url
             };
         }
     }

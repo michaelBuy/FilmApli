@@ -6,5 +6,5 @@
 	[Duree] NVARCHAR(25),
 	[Origine] NVARCHAR(50),
 	[Synopsis_Film] NVARCHAR(500),
-	[Img_Url] NVARCHAR(100)
+	--[Img_Url] NVARCHAR(100)
 )
