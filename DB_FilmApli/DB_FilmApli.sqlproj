@@ -66,6 +66,7 @@
     <Folder Include="StoredProcedure\Fonction" />
     <Folder Include="StoredProcedure\Genre" />
     <Folder Include="StoredProcedure\Saison" />
+    <Folder Include="StoredProcedure\imgApi" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Personne.sql" />
@@ -101,6 +102,10 @@
     <Build Include="StoredProcedure\Saison\P_Saison_Delete.sql" />
     <Build Include="StoredProcedure\Saison\P_Saison_Update.sql" />
     <Build Include="StoredProcedure\Saison\P_Saison_Insert.sql" />
+    <Build Include="Table\imgApi.sql" />
+    <Build Include="StoredProcedure\imgApi\P_imgApi_Delete.sql" />
+    <Build Include="StoredProcedure\imgApi\P_imgApi_Insert.sql" />
+    <Build Include="StoredProcedure\imgApi\P_imgApi_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB_FilmApli.publish.xml" />

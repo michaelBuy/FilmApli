@@ -4,8 +4,7 @@
 	@DateSortie DATETIME2,
 	@Duree NVARCHAR(25),
 	@Origine NVARCHAR(50),
-	@Synopsis NVARCHAR(500)
-	--@Img_Url NVARCHAR(100)
+	@Synopsis NVARCHAR(500)	
 AS
 BEGIN
 	UPDATE Film

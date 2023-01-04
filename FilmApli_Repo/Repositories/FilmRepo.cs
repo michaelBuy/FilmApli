@@ -35,6 +35,7 @@ namespace FilmApli_Repo.Repositories
         public override int Insert(Film entity)
         {
             Command cmd = new Command("P_Film_Insert", true);
+            cmd.AddParameter("@Id", entity.Id);
             cmd.AddParameter("@Titre", entity.Titre!);
             cmd.AddParameter("@DateSortie", entity.DateSortie!);
             cmd.AddParameter("@Duree", entity.Duree!);

@@ -27,6 +27,7 @@ builder.Services.AddScoped<IEpisodeService, Episode_Service>();
 builder.Services.AddScoped<ISaisonService, Saison_Service>();
 builder.Services.AddScoped<IFonctionService, Fonction_Service>();
 builder.Services.AddScoped<IGenreService, Genre_Service>();
+builder.Services.AddScoped<IimgApiService, imgApi_Service>();
 
 int[] c = new int[] { };
 var app = builder.Build();
