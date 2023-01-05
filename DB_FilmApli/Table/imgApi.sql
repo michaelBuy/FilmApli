@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[imgApi]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
-	[Id_Film] INT NOT NULL ,
-	[Id_Beta] INT NOT NULL
+	[Id_Film] INT NULL ,
+	[Id_Beta] INT NULL
 )

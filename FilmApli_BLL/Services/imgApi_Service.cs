@@ -17,27 +17,27 @@ namespace FilmApli_BLL.Services
 
         public bool Delete(imgApi_BLL id)
         {
-            return _imgApi!.Delete(id.ToBll());
+            return _imgApi!.Delete(id.ToRepo());
         }
 
         public imgApi_BLL Get(int id)
-        {
-            return _imgApi!.Get(id).ToRepo();
+        {            
+            return _imgApi!.Get(id).ToBll();
         }
 
         public IEnumerable<imgApi_BLL> GetAll()
         {
-            return _imgApi!.GetAll().Select(x => x.ToRepo());
+            return _imgApi!.GetAll().Select(x => x.ToBll());
         }
 
         public int Insert(imgApi_BLL entity)
         {
-            return _imgApi!.Insert(entity.ToBll());
+            return _imgApi!.Insert(entity.ToRepo());
         }
 
         public bool Update(imgApi_BLL data)
         {
-            return _imgApi!.Update(data.ToBll());
+            return _imgApi!.Update(data.ToRepo());
         }
     }
 }

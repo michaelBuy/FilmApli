@@ -19,8 +19,8 @@ namespace FilmApli.Controllers
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
-        {
-            return Ok(_imgApiService.Get(id));
+        {            
+            return Ok(_imgApiService.Get(id).Id_Film);            
         }
 
         [HttpGet]

@@ -29,7 +29,7 @@ namespace FilmApli_Repo.Repositories.BasicRepository
             Command cmd = new Command("SELECT * FROM [" + EntityName + "]" +
                             "WHERE " + IdName + " = @Id");
             cmd.AddParameter("@Id", id!);
-            return ConnectionString.ExecuteReader(cmd, Convert).SingleOrDefault();
+            return ConnectionString!.ExecuteReader(cmd, Convert).SingleOrDefault()!;
         }
 
         public IEnumerable<TEntity> GetAll()
