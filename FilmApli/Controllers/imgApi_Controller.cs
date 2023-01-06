@@ -20,7 +20,7 @@ namespace FilmApli.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {            
-            return Ok(_imgApiService.Get(id).Id_Film);            
+            return Ok(new { Id_Film = _imgApiService.Get(id).Id_Beta });            
         }
 
         [HttpGet]
