@@ -10,12 +10,12 @@ Modèle de script de post-déploiement
 --------------------------------------------------------------------------------------
 */
 
-INSERT INTO Film(Titre, DateSortie, Duree, Origine, Synopsis_Film)
-VALUES
-	('Forrest Gump', '1994-07-06', '2h20', 'USA', 'Quelques décennies d''histoire américaine, des années 1940 à la fin du XXème siècle, à travers le regard et l''étrange odyssée d''un homme simple et pur, Forrest Gump.'),
-	('La Liste de Schindler', '1994-02-04', '3h15', 'USA', 'Evocation des années de guerre d''Oskar Schindler, industriel autrichien rentré à Cracovie en 1939 avec les troupes allemandes. Il va, tout au long de la guerre, protéger des juifs en les faisant travailler dans sa fabrique.' ),
-	('La Ligne verte', '2000-03-01', '3h09', 'USA', 'Paul Edgecomb, pensionnaire centenaire d''une maison de retraite, est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold Mountain en 1935, il était chargé de veiller au bon déroulement des exécutions capitales en s’efforçant  ' ),
-	('Le Parrain', '1972-10-27', '2h55', 'USA', 'En 1945, à New York, les Corleone sont une des cinq familles de la mafia. Don Vito Corleone marie sa fille à un bookmaker. Sollozzo, "parrain" de la famille Tattaglia, propose à Don Vito une association dans le trafic de drogue...' )
+--INSERT INTO Film(Titre, DateSortie, Duree, Origine, Synopsis_Film)
+--VALUES
+--	('Forrest Gump', '1994-07-06', '2h20', 'USA', 'Quelques décennies d''histoire américaine, des années 1940 à la fin du XXème siècle, à travers le regard et l''étrange odyssée d''un homme simple et pur, Forrest Gump.'),
+--	('La Liste de Schindler', '1994-02-04', '3h15', 'USA', 'Evocation des années de guerre d''Oskar Schindler, industriel autrichien rentré à Cracovie en 1939 avec les troupes allemandes. Il va, tout au long de la guerre, protéger des juifs en les faisant travailler dans sa fabrique.' ),
+--	('La Ligne verte', '2000-03-01', '3h09', 'USA', 'Paul Edgecomb, pensionnaire centenaire d''une maison de retraite, est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold Mountain en 1935, il était chargé de veiller au bon déroulement des exécutions capitales en s’efforçant  ' ),
+--	('Le Parrain', '1972-10-27', '2h55', 'USA', 'En 1945, à New York, les Corleone sont une des cinq familles de la mafia. Don Vito Corleone marie sa fille à un bookmaker. Sollozzo, "parrain" de la famille Tattaglia, propose à Don Vito une association dans le trafic de drogue...' )
 
 INSERT INTO Serie(Nom_Serie, Duree_Serie, DateSortie_Serie, Synopsis_Serie, Origine_Serie)
 VALUES
@@ -53,24 +53,27 @@ VALUES
 	('Producteur'),
 	('Scénariste')
 
-INSERT INTO Film_Genre(Id_Film, Id_Genre)
-VALUES
-	(1, 1),
-	(1, 5),
-	(1, 4),
-	(2, 6),
-	(2, 7),
-	(3, 9),
-	(3, 9),
-	(4, 8),
-	(4, 4)
 
-INSERT INTO Film_Personne(Id_Film, Id_Personne, Id_Fonction)
-VALUES
-	(3, 5, 1),
-	(2, 4, 3),
-	(1, 7, 1),
-	(4, 6, 1)
+		
+
+--INSERT INTO Film_Genre(Id_Film, Id_Genre)
+--VALUES
+--	(1, 1),
+--	(1, 5),
+--	(1, 4),
+--	(2, 6),
+--	(2, 7),
+--	(3, 9),
+--	(3, 9),
+--	(4, 8),
+--  (4, 4)
+
+--INSERT INTO Film_Personne(Id_Film, Id_Personne, Id_Fonction)
+--VALUES
+--	(3, 5, 1),
+--	(2, 4, 3),
+--	(1, 7, 1),
+--	(4, 6, 1)
 
 INSERT INTO Serie_Genre(Id_Serie, Id_Genre)
 VALUES	
